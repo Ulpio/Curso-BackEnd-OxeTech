@@ -1,3 +1,5 @@
+//Mesmos conceitos de autorSchema
+
 import mongoose from "mongoose";
 
 const livroSchema = new mongoose.Schema({

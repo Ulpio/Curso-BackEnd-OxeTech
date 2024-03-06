@@ -1,4 +1,7 @@
+//Mesma lógica do autorController
+
 import livroModel from "../models/livroSchema.js";
+
 
 class livroController{
     static async listarLivros(req,res){

@@ -1,11 +1,12 @@
-import mongoose from "mongoose"
+// Arquivo Responsável por realizar a conexão no banco de dados
 
-URL ="mongodb+srv://dataulpio:admin123@oxetech.dobku14.mongodb.net/livraria?retryWrites=true&w=majority&appName=oxetech"
+import mongoose from "mongoose" // Importando o módulo mongoose para contectar no mongoDB
 
+URL ="Sua URL Aqui" //URL da sua conta MongoDB
 
-async function connectDB(){
-    mongoose.connect(URL)
-    return mongoose.connection
+async function connectDB(){ // Função que conecta no Mongo
+    mongoose.connect(URL) // Mongoose tenta realizar a conexão no link
+    return mongoose.connection // Retorna a conexão
 }
 
-export default connectDB
+export default connectDB // Exporta a função
