@@ -2,7 +2,7 @@
 
 import mongoose from "mongoose" // Importando o módulo mongoose para contectar no mongoDB
 
-URL ="Sua URL Aqui" //URL da sua conta MongoDB
+URL ="mongodb+srv://dataulpio:admin@123@oxetech.dobku14.mongodb.net/livraria?retryWrites=true&w=majority&appName=oxetech" //URL da sua conta MongoDB
 
 async function connectDB(){ // Função que conecta no Mongo
     mongoose.connect(URL) // Mongoose tenta realizar a conexão no link
